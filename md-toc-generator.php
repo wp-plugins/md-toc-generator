@@ -32,7 +32,7 @@ function mdtoc_admin_actions() {
 }
 
 add_action('admin_menu', 'mdtoc_admin_actions');
-add_action('admin_menu', 'include_admin_styles');
+add_action('admin_head', 'include_admin_styles'); 
 add_action('wp_head', 'include_styles');
 add_action('the_content', 'parse_post');
 
